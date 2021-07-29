@@ -32,3 +32,6 @@
 .grayscale img{
     filter:grayscale(100%)
 }
+.icon-color{
+    color:#E77C40;
+}

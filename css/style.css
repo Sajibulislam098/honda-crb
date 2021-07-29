@@ -1,15 +1,11 @@
-.panda-bg-info{
-background-color: #FEEAE9;
 
 
-}
-.categorise img{
-    width: 100px;
-}
-.panda-btn-buy-now{
+
+.btn-1{
     color:white;
-    background-image: linear-gradient(to bottom,#FF589B 0%,#ff4b92 100%);
-    border-radius: 8px;
+    background-color: #E76F51;
+
+    border-radius: 4px;
     border: none;
     padding: 9px 25px;
 }
@@ -19,5 +15,20 @@ background-color: #FEEAE9;
 .color-text{
     color:orangered
 }
-h1{
-    color: #363958;}
+/* h1{
+    color: #363958;} */
+    .header-bg{
+        background-color: #264653;;
+    }
+    .h1-black{
+        color:black;font-weight: 600;
+    }
+.paragraph{
+    color: #e0e0e0; font-size: small
+}
+.color-text{
+    color:#E76F51, 100%
+}
+.grayscale img{
+    filter:grayscale(100%)
+}

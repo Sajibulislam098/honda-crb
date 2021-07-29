@@ -21,7 +21,7 @@
     <header class="header-bg">
       <!-- navbar part -->
       <nav
-        class="d-flex justify-content-around navbar navbar-expand-lg navbar-light"
+        class="d-flex justify-content-around navbar navbar-expand-lg navbar-dark"
       >
         <div class="container d-flex justify-content-around">
           <button
@@ -48,13 +48,13 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3" href="#product">Product</a>
+                <a class="nav-link me-3" href="#product">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3" href="#aboutus">About us</a>
+                <a class="nav-link me-3" href="#aboutus">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link me-3" href="#contact">Contact us</a>
+                <a class="nav-link me-3" href="#contact">Contact </a>
               </li>
               <button class="btn-1 ms-5">login</button>
             </ul>
@@ -74,8 +74,53 @@
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </p>
+            <!-- Button trigger modal -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn-1"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Purchase
+            </button>
 
-            <button class="btn-1">Buy Now</button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">
+                      Write Down What You Want to buy
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <input type="text" placeholder="Write here" />
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn-1" data-bs-dismiss="modal">
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <button class="btn-1">Buy Now</button> -->
           </div>
           <div class="col-lg-6 g-5">
             <img src="images/header-bike.png" class="d-block w-100" alt="..." />
@@ -227,7 +272,7 @@
         <h1 class="d-flex justify-content-center alignt-item-center">
           Frequently Asked &nbsp; <span class="color-text"> Questions</span>
         </h1>
-        <div class="container">
+        <div class="container mb-5">
           <div class="row d-flex align-items-center">
             <div class="col-lg-6 g-5 text-white">
               <img src="images/faq.png" class="d-block w-100" alt="..." />
@@ -333,17 +378,17 @@
                       class="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
+                      data-bs-target="#collapseFour"
                       aria-expanded="false"
-                      aria-controls="collapseThree"
+                      aria-controls="collapseFour"
                     >
                       What rules should I follow when riding my bike?
                     </button>
                   </h2>
                   <div
-                    id="collapseThree"
+                    id="collapseFour"
                     class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
+                    aria-labelledby="headingFour"
                     data-bs-parent="#accordionExample"
                   >
                     <div class="accordion-body">
@@ -360,37 +405,85 @@
                   </div>
                 </div>
               </div>
-
-              <!-- <div class="accordion" id="accordionExample">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="clearfix mb-0">
-                      <a
-                        class="btn btn-link"
-                        data-toggle="collapse"
-                        data-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                        >How Can I Contact You ? <i class="fa fa-angle-down"></i
-                      ></a>
-                    </h2>
-                  </div>
-                  <div
-                    id="collapseOne"
-                    class="collapse"
-                    aria-labelledby="headingOne"
-                    data-parent="#saccordionExample"
-                  >
-                    <div class="card-body">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Necessitatibus molestias vel illum assumenda aperiam qui
-                      quasi? Voluptas placeat sit culpa.
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
+        </div>
+      </section>
+      <!-- carousel section -->
+      <section class="container my-5">
+        <h1 class="d-flex justify-content-center alignt-item-center mb-4">
+          Choose Your Best &nbsp; <span class="color-text"> Bike</span>
+        </h1>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="images/3.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section
+        style="height: 300px"
+        class="container d-flex justify-content-center align-items-center rounded-3"
+        id="subscribe"
+      >
+        <div>
+          <h1>LET'S STAY IN <span class="color-text">TOUCH</span></h1>
+          <p>Get updates on sales specials and more</p>
+          <input class="form-control" type="text" placeholder="YOUR EMAIL" />
+          <br />
+          <button class="btn-1">SUBMIT</button>
         </div>
       </section>
     </main>
